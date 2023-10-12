@@ -45,7 +45,7 @@ impl std::ops::Add for Probability {
     }
 }
 
-impl std::iter::Sum<Self> for Probability {
+impl std::iter::Sum for Probability {
     fn sum<I: Iterator<Item = Self>>(iter: I) -> Self {
         Self(1. - iter.map(|x| 1. - x.0).sum::<f64>())
     }
