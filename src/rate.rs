@@ -1,6 +1,7 @@
 use derive_more::*;
 
-#[derive(Debug, PartialEq, PartialOrd, Into, Add, AddAssign, Deref)]
+#[readonly::make]
+#[derive(Debug, PartialEq, PartialOrd, Into, Add, AddAssign)]
 pub struct Rate(pub f64);
 
 impl Default for Rate {
