@@ -2,6 +2,7 @@
 resolver = "2"
 
 [dependencies]
+itertools = "0.11.0"
 faer = "0.12.0"
 
 [workspace.package]
@@ -17,3 +18,4 @@ description = "A pure Rust implementation of Veterinary Epidemiology things"
 version.workspace = true
 edition.workspace = true
 authors.workspace = true
+license-file.workspace = true
