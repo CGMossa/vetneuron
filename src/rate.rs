@@ -1,6 +1,6 @@
 use derive_more::*;
 
-#[derive(Debug, PartialEq, PartialOrd, Into, Add, AddAssign)]
+#[derive(Debug, PartialEq, PartialOrd, Into, Add, AddAssign, Deref)]
 pub struct Rate(pub f64);
 
 impl Default for Rate {
